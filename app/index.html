@@ -24,7 +24,7 @@
                 <tr ng-repeat="data in Employee">
                     <td ng-repeat="(key,val) in data">{{val}}</td>
                     <td><button type="button" class="btn btn-primary" ng-click="EmployeeDelete($index)">Delete</button></td>
-                    <td><button type="button" class="btn btn-primary"ng-click="EmployeeEditfunc($index)">EDIT</button></td>
+                    <td><button type="button" class="btn btn-primary"ng-click="EmployeeEditfunc($index)" ng-disabled="editData">EDIT</button></td>
                 </tr>
 
             </table>
