@@ -35,7 +35,6 @@ app.controller("EmployeeDataCtrl", function ($http, $scope) {
             $scope.Employee[$scope.index].Name = $scope.EmployeeEdit.Name;
             $scope.Employee[$scope.index].Location = $scope.EmployeeEdit.Location;
             $scope.Employee[$scope.index].DOB = $scope.EmployeeEdit.DOB;
-            $scope.Employee[$scope.index].DOJ = $scope.EmployeeEdit.DOJ;
             $scope.editData = false;
             localStorage.setItem('localStorageKey', JSON.stringify($scope.Employee));
         }
@@ -45,8 +44,7 @@ app.controller("EmployeeDataCtrl", function ($http, $scope) {
                     {ID: $scope.EmployeeEdit.ID,
                         Name: $scope.EmployeeEdit.Name,
                         Location: $scope.EmployeeEdit.Location,
-                        DOB: $scope.EmployeeEdit.DOB,
-                    DOJ: $scope.EmployeeEdit.DOB}
+                        DOB: $scope.EmployeeEdit.DOB}
             );
 
             $scope.editData = false;
